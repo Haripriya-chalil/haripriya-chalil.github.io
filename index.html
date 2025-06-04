@@ -1,48 +1,864 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Haripriya Chalil | Full Stack Developer</title>
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css" />
 </head>
+
 <body>
 
-  <header>
-    <h1>Your Name</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <!-- Header -->
+    <header class="py-3 bg-dark text-white">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <h2 class="mb-0">Haripriya Chalil</h2>
+            <div class="d-flex align-items-center gap-4">
+                <a href="mailto:haripc007@gmail.com" class="text-white"><i class="fa fa-envelope me-1"></i> haripc007@gmail.com</a>
+                <a href="tel:07436379387" class="text-white"><i class="fa fa-phone me-1"></i> 07436379387</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-lg-none" href="#">HC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#technologies" class="nav-link">Technologies</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#qualification" class="nav-link">Qualification</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm a [Your Job Title] who loves [skills/interests]. I build web apps, design UI, and write clean code.</p>
-  </section>
+    <!-- About -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3>About Me</h3>
+                    <p><strong>Full Stack Developer | 4+ Years of Experience</strong></p>
+                    <p>
+                        I'm a results-driven Full Stack PHP Developer with 4+ years of hands-on experience delivering scalable, high-performance web applications in both finance and digital agency environments. I specialize in modern PHP frameworks such as Laravel, Yii, and CodeIgniter, and have extensive front-end experience with Vue.js.
+                    </p>
+                    <p>
+                        My strengths lie in building RESTful APIs, integrating third-party services, and working with data-heavy applications using MySQL and SQL Server. I also have practical exposure to cloud services like AWS, containerization with Docker, and CI/CD pipelines.
+                    </p>
+                    <ul>
+                        <li>✔ Proficient in PHP, Laravel, Yii, CodeIgniter, Vue.js, and JavaScript</li>
+                        <li>✔ Skilled in SOLID principles, modern design patterns, and microservice architecture</li>
+                        <li>✔ Experienced in MySQL tuning, API integrations, and security best practices</li>
+                        <li>✔ Comfortable with Docker, Git, Agile workflows, and cloud-based deployments</li>
+                    </ul>
+                    <p>
+                        I’m passionate about solving complex problems, writing clean code, and collaborating with teams to build applications that deliver real value.
+                    </p>
+                </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project 1</h3>
-      <p>Short description of what it does, tools used, etc.</p>
-    </div>
-    <div class="project">
-      <h3>Project 2</h3>
-      <p>Another project description.</p>
-    </div>
-  </section>
+                <div class="col-lg-4">
+                    <img src="assets/images/me.jpg" alt="Haripriya Chalil" class="img-fluid rounded-circle shadow" style="width: 300px; height: 300px; object-fit: cover;" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="py-5 text-center bg-light">
+        <div class="container">
+            <h3 class="mb-4">Services</h3>
+            <div class="row g-4">
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yourname@example.com</p>
-    <p>GitHub: <a href="https://github.com/your-username" target="_blank">your-username</a></p>
-  </section>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 p-3">
+                        <img src="assets/images/professional_service.svg" class="card-img-top mx-auto" style="width: 60px;" alt="Professional Services">
+                        <div class="card-body">
+                            <h6 class="card-title mt-2">Web Development</h6>
+                            <p>Designing and developing responsive, modern, and user-friendly websites tailored to meet your specific business needs.</p>
+                        </div>
+                    </div>
+                </div>
 
-  <footer>
-    <p>&copy; 2025 Your Name</p>
-  </footer>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 p-3">
+                        <img src="assets/images/professional_service.svg" class="card-img-top mx-auto" style="width: 60px;" alt="Professional Services">
+                        <div class="card-body">
+                            <h6 class="card-title mt-2">Database Management</h6>
+                            <p>Efficiently designing and managing databases with a focus on reliability, scalability, and performance.</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 p-3">
+                        <img src="assets/images/professional_service.svg" class="card-img-top mx-auto" style="width: 60px;" alt="Professional Services">
+                        <div class="card-body">
+                            <h6 class="card-title mt-2">API Development</h6>
+                            <p>Designing and integrating secure, scalable APIs to enable seamless data exchange and enhance application functionality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 p-3">
+                        <img src="assets/images/professional_service.svg" class="card-img-top mx-auto" style="width: 60px;" alt="Professional Services">
+                        <div class="card-body">
+                            <h6 class="card-title mt-2">Performance Optimization</h6>
+                            <p>Optimizing website performance by reducing load times and enhancing scalability to deliver a smoother user experience.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <section id="technologies" class="py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4">Technologies I Use</h3>
+            <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3">
+
+                <!-- Example Technology Card -->
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <i class="fab fa-html5 fa-2x text-danger mb-2"></i>
+                            <div class="small fw-semibold">HTML</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat for each technology -->
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <i class="fab fa-css3-alt fa-2x text-primary mb-2"></i>
+                            <div class="small fw-semibold">CSS</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <i class="fab fa-js-square fa-2x text-warning mb-2"></i>
+                            <div class="small fw-semibold">JavaScript</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <i class="fab fa-bootstrap fa-2x text-purple mb-2"></i>
+                            <div class="small fw-semibold">Bootstrap</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <i class="fab fa-laravel fa-2x text-danger mb-2"></i>
+                            <div class="small fw-semibold">Laravel</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <i class="fab fa-php fa-2x text-primary mb-2"></i>
+                            <div class="small fw-semibold">PHP</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom text-only cards -->
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <div class="fa-2x text-muted mb-2">🧩</div>
+                            <div class="small fw-semibold">CodeIgniter</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <i class="fab fa-npm fa-2x text-danger mb-2"></i>
+                            <div class="small fw-semibold">NPM</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <i class="fab fa-vuejs fa-2x text-warning mb-2"></i>
+                            <div class="small fw-semibold">Vue.js</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <i class="fas fa-code fa-2x text-success mb-2"></i>
+                            <div class="small fw-semibold">Yii Framework</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <i class="fab fa-git-alt fa-2x mb-2"></i>
+                            <div class="small fw-semibold">Git</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <i class="fab fa-github fa-2x mb-2"></i>
+                            <div class="small fw-semibold">GitHub</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <i class="fas fa-database fa-2x mb-2"></i>
+                            <div class="small fw-semibold">MySQL</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <i class="fab fa-github fa-2x mb-2"></i>
+                            <div class="small fw-semibold">Composer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <i class="fab fa-docker fa-2x mb-2"></i>
+                            <div class="small fw-semibold">Docker</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <i class="fab fa-linux fa-2x mb-2"></i>
+                            <div class="small fw-semibold">Linux</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <i class="fab fa-aws fa-2x mb-2"></i>
+                            <div class="small fw-semibold">AWS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <div class="small fw-semibold">CI/CD Pipeline</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <div class="small fw-semibold">Agile</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <div class="small fw-semibold">Scrum</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <div class="small fw-semibold">Tailwind CSS</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Highlights -->
+    <section id="projects" class="py-5 text-center bg-light">
+        <div class="container">
+            <h3 class="mb-4">Projects</h3>
+            <div class="row g-4">
+
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 p-3 d-flex flex-column justify-content-between">
+
+                        <!-- Card Content -->
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Creditor Interface</h5>
+                            <p class="card-text">Laravel and Vue.js application for management of Creditor information and conditions</p>
+                        </div>
+
+                        <!-- Read More Button -->
+                        <div class="text-center mt-auto">
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                                Read More
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 p-3 d-flex flex-column justify-content-between">
+
+                        <!-- Card Content -->
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Psychic-potato</h5>
+                            <p class="card-text">A system for templating and sending emails</p>
+                        </div>
+
+                        <!-- Read More Button -->
+                        <div class="text-center mt-auto">
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                                Read More
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 p-3 d-flex flex-column justify-content-between">
+
+                        <!-- Card Content -->
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Lendress</h5>
+                            <p class="card-text">Lendress is an online platform that creates a c2c and b2c marketplace for people looking to sell or rent their clothes.</p>
+                        </div>
+
+                        <!-- Read More Button -->
+                        <div class="text-center mt-auto">
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                                Read More
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 p-3 d-flex flex-column justify-content-between">
+
+                        <!-- Card Content -->
+                        <div class="card-body text-center">
+                            <h5 class="card-title mt-2">Ileaf  App</h5>
+                            <p>An e-learning platform featuring interactive lessons and a dynamic analytics dashboard to monitor and evaluate student performance in real time.</p>
+                        </div>
+
+                        <!-- Read More Button -->
+                        <div class="text-center mt-auto">
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                                Read More
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 p-3 d-flex flex-column justify-content-between">
+
+                        <!-- Card Content -->
+                        <div class="card-body text-center">
+                            <h5 class="card-title mt-2">Locopo App</h5>
+                            <p> A comprehensive Japanese application for managing services, donations, and business operations, designed to streamline workflows and support local organizational needs.</p>
+                        </div>
+
+                        <!-- Read More Button -->
+                        <div class="text-center mt-auto">
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal5">
+                                Read More
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 p-3 d-flex flex-column justify-content-between">
+
+                        <!-- Card Content -->
+                        <div class="card-body text-center">
+                            <h5 class="card-title mt-2">KMCC Website </h5>
+                            <p>  KMCC is a global organization of IUML Supporters from the Indian state of Kerala.</p>
+                        </div>
+
+                        <!-- Read More Button -->
+                        <div class="text-center mt-auto">
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                                Read More
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 p-3 d-flex flex-column justify-content-between">
+
+                        <!-- Card Content -->
+                        <div class="card-body text-center">
+                            <h5 class="card-title mt-2">AlJamia </h5>
+                            <p> A comprehensive school website that includes school information, academic calendar, class timetables, upcoming events, and a library book catalog.</p>
+                        </div>
+
+                        <!-- Read More Button -->
+                        <div class="text-center mt-auto">
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal7">
+                                Read More
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-4">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModal1Label">Creditor Interface</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Overview:</strong> Built a web application for managing creditor profiles, terms, and conditions using Laravel and Vue.js. The platform allows authorized users to create, update, and track creditor-related data with a secure and responsive interface.</p>
+
+                        <p><strong>Tech Stack:</strong> Laravel, Vue.js, Tailwind CSS, MySQL, Laravel Passport</p>
+
+                        <p>
+                            <strong>Key Contributions:</strong>
+                            <ul>
+                                <li>Implemented secure user authentication using Laravel Passport</li>
+                                <li>Developed dynamic and reactive UI components using Vue.js</li>
+                                <li>Designed mobile-responsive layouts with Tailwind CSS</li>
+                                <li>Built RESTful APIs for creditor data operations</li>
+                                <li>Handled complex conditional logic for creditor eligibility and terms</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <strong>Challenges:</strong>
+                            <ul>
+                                <li>Managing role-based access across multiple user types</li>
+                                <li>Ensuring consistency in real-time updates for sensitive financial data</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <strong>Solution:</strong>
+                            <ul>
+                                <li>Used Laravel policies and middleware to enforce role-based access control</li>
+                                <li>Leveraged Vue.js reactivity for seamless UI updates without page reloads</li>
+                                <li>Applied database normalization and indexing for performance and data integrity</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-4">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModal2Label">Psychic-potato</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Overview:</strong> Developed a flexible system for designing email templates and sending emails, integrating multiple services to handle content management and attachments efficiently.</p>
+
+                        <p><strong>Tech Stack:</strong> Laravel, Vue.js, Graph API, AWS S3, AWS Textract, Tailwind CSS, MSSQL, MySQL</p>
+
+                        <p>
+                            <strong>Key Contributions:</strong>
+                            <ul>
+                                <li>Built dynamic email templates with Vue.js for easy customization</li>
+                                <li>Integrated Graph API for seamless email sending and management</li>
+                                <li>Implemented secure storage of email attachments using AWS S3</li>
+                                <li>Used AWS Textract to process and extract data from email content</li>
+                                <li>Designed responsive UI with Tailwind CSS</li>
+                                <li>Managed database operations with MSSQL and MySQL</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <strong>Challenges:</strong>
+                            <ul>
+                                <li>Ensuring reliable email delivery and handling attachment storage securely</li>
+                                <li>Processing and extracting meaningful data from varied email content</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <strong>Solution:</strong>
+                            <ul>
+                                <li>Implemented retry mechanisms and error handling for email delivery</li>
+                                <li>Leveraged AWS Textract to automate content extraction and validation</li>
+                                <li>Used encrypted storage and secure API access for attachments</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-4">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModal3Label">Lendress</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Overview:</strong> Lendress is an online platform providing both C2C and B2C marketplaces where users can sell or rent clothes seamlessly.</p>
+
+                        <p><strong>Tech Stack:</strong> Laravel, Blade, MySQL, Payment Gateway Integration, Third-party Shipping Tracking API, HTML, CSS</p>
+
+                        <p>
+                            <strong>Key Contributions:</strong>
+                            <ul>
+                                <li>Developed marketplace features supporting both customer-to-customer and business-to-customer transactions</li>
+                                <li>Integrated secure payment gateway for smooth and safe transactions</li>
+                                <li>Implemented shipping tracking using third-party APIs to provide real-time updates</li>
+                                <li>Built responsive frontend with Blade templates and custom CSS</li>
+                                <li>Optimized database queries for efficient product and user management</li>
+                                <li>Implemented Laravel localization features for dynamic language switching</li>
+                                <li>Created language files and managed translations efficiently</li>
+                                <li>Designed UI components adaptable to multiple languages</li>
+                                <li>Ensured seamless language toggling without page reloads</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <strong>Challenges:</strong>
+                            <ul>
+                                <li>Ensuring secure and reliable payment processing</li>
+                                <li>Maintaining accurate and timely shipping status updates</li>
+                                <li>Handling marketplace scalability and user concurrency</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <strong>Solution:</strong>
+                            <ul>
+                                <li>Implemented robust payment validation and error handling mechanisms</li>
+                                <li>Utilized reliable third-party APIs with fallback strategies for shipping tracking</li>
+                                <li>Designed scalable database schemas and caching strategies for performance</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-4">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModal4Label">Ileaf App</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Overview:</strong> An e-learning platform offering interactive lessons and a dynamic analytics dashboard to monitor and evaluate student performance in real time.</p>
+
+                        <p><strong>Tech Stack:</strong> Laravel, Blade, MySQL, REST API, JWT Authentication, Swagger, Payment Gateway Integration</p>
+
+                        <p>
+                            <strong>Key Contributions:</strong>
+                            <ul>
+                                <li>Implemented secure authentication using JWT to protect user data</li>
+                                <li>Documented APIs comprehensively with Swagger for easier integration and maintenance</li>
+                                <li>Developed role-based access control for granular user management</li>
+                                <li>Designed optimized database queries to efficiently handle large volumes of data</li>
+                                <li>Integrated payment gateway for seamless course purchases</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <strong>Challenges:</strong>
+                            <ul>
+                                <li>Maintaining real-time analytics accuracy with growing data sets</li>
+                                <li>Ensuring robust security and role management across different user types</li>
+                                <li>Handling smooth payment processing and error management</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <strong>Solution:</strong>
+                            <ul>
+                                <li>Leveraged JWT and secure middleware for enhanced authentication</li>
+                                <li>Used Swagger to maintain clear and updated API documentation</li>
+                                <li>Implemented caching and optimized database indexing for performance</li>
+                                <li>Built resilient payment workflows with proper error handling</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-4">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModal5Label">Locopo App</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Overview:</strong> A comprehensive Japanese application for managing services, donations, and business operations, designed to streamline workflows and support local organizational needs.</p>
+
+                        <p><strong>Tech Stack:</strong> Laravel, Blade, MySQL, Bootstrap, CSS, AJAX, Passport Authentication</p>
+
+                        <p>
+                            <strong>Key Contributions:</strong>
+                            <ul>
+                                <li>Implemented secure user authentication using Passport</li>
+                                <li>Developed dynamic interfaces with AJAX for seamless user experience</li>
+                                <li>Built efficient database schemas to handle diverse business and donation data</li>
+                                <li>Ensured responsive design using Bootstrap and custom CSS</li>
+                                <li>Streamlined workflows to optimize service and donation management</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <strong>Challenges:</strong>
+                            <ul>
+                                <li>Managing complex workflows across multiple service domains</li>
+                                <li>Ensuring data integrity and security in donation processing</li>
+                                <li>Providing a user-friendly interface for a diverse user base</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <strong>Solution:</strong>
+                            <ul>
+                                <li>Used Passport for robust authentication and authorization</li>
+                                <li>Applied AJAX to create smooth, asynchronous interactions</li>
+                                <li>Optimized database queries and structure for reliable data management</li>
+                                <li>Designed with Bootstrap to ensure accessibility and responsiveness</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="projectModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-4">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModal6Label">KMCC Website</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Overview:</strong> KMCC is a global organization of IUML supporters from Kerala, featuring a simple informational website.</p>
+
+                        <p><strong>Tech Stack:</strong> Laravel, Blade, Bootstrap, MySQL, Authentication</p>
+
+                        <p>
+                            <strong>Key Contributions:</strong>
+                            <ul>
+                                <li>Developed the website using Laravel and Blade templates</li>
+                                <li>Implemented user authentication for secure access</li>
+                                <li>Designed a responsive UI with Bootstrap</li>
+                                <li>Managed data storage with MySQL</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <strong>Challenges:</strong>
+                            <ul>
+                                <li>Maintaining simplicity while ensuring security</li>
+                                <li>Providing a responsive design for diverse devices</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <strong>Solution:</strong>
+                            <ul>
+                                <li>Leveraged Laravel’s built-in authentication for secure user management</li>
+                                <li>Used Bootstrap to create a clean, responsive layout</li>
+                            </ul>
+                        </p>
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="projectModal7" tabindex="-1" aria-labelledby="projectModal7Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-4">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModal7Label">AlJamia</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Overview:</strong> A comprehensive school website featuring school information, academic calendar, class timetables, upcoming events, and a library book catalog.</p>
+
+                        <p><strong>Tech Stack:</strong> Laravel, Blade, MySQL, Bootstrap, JavaScript</p>
+
+                        <p>
+                            <strong>Key Contributions:</strong>
+                            <ul>
+                                <li>Developed interactive modules for academic calendar and class timetables</li>
+                                <li>Implemented event management system for upcoming school events</li>
+                                <li>Created searchable library catalog with book details</li>
+                                <li>Designed responsive UI for accessibility across devices</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <strong>Challenges:</strong>
+                            <ul>
+                                <li>Ensuring smooth navigation between multiple modules</li>
+                                <li>Maintaining up-to-date data synchronization across features</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <strong>Solution:</strong>
+                            <ul>
+                                <li>Utilized Laravel’s MVC architecture to organize features efficiently</li>
+                                <li>Implemented AJAX for seamless data updates without page reloads</li>
+                            </ul>
+                        </p>
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4">Experience</h3>
+
+            <div class="row g-4">
+
+
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 p-3">
+                        <img src="assets/images/professional_service.svg" class="card-img-top mx-auto" style="width: 60px;" alt="Professional Services">
+                        <div class="card-body">
+                            <h6 class="card-title mt-2">FullStack Developer</h6>
+                            <p class="text-muted mb-0">Bridgewater Finance Group (Manchester,London)</p>
+                            <p class="text-muted mb-0">Nov 2022 – Present</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 p-3">
+                        <img src="assets/images/professional_service.svg" class="card-img-top mx-auto" style="width: 60px;" alt="Professional Services">
+                        <div class="card-body">
+                            <h6 class="card-title mt-2">Associate Laravel Developer</h6>
+                            <p class="text-muted mb-0">Seeroo IT Solutions (Kochi,India)</p>
+                            <p class="text-muted mb-0">Jan 2020 – Sep 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="qualification" class="py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4">Qualification</h3>
+
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 p-3">
+                        <div class="text-center"><i class="fas fa-laptop-code fa-2x text-warning mb-2"></i></div>
+                        <div class="card-body">
+                            <h6 class="card-title mt-2">
+                                BEng (Hons) Computer Science Engineering
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2025 Haripriya Chalil. All rights reserved.</p>
+             
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle shadow" style="z-index: 999;">
+        <i class="bi bi-arrow-up-short fs-4"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
+
 </html>
