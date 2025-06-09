@@ -286,6 +286,19 @@ body{ overflow-x: hidden;}
 .form-control{border: 1px solid #CBD3DC;padding: .6rem;}
 .enquiry_form{background: url("../images/shape_top_right.svg") no-repeat; background-position: right 0 top -90px;}
 .enquiry_leftimg{ background: url("../images/enquiry_img.jpg") no-repeat left top; background-size: cover;}
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+footer .social-links a {
+    color: #fff;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
 
 
 
