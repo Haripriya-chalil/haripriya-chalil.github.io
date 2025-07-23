@@ -71,7 +71,7 @@
                         My strengths lie in building RESTful APIs, integrating third-party services, and working with data-heavy applications using MySQL and SQL Server. I also have practical exposure to cloud services like AWS, containerization with Docker, and CI/CD pipelines.
                     </p>
                     <ul>
-                        <li>✔ Proficient in PHP, Laravel, Yii, CodeIgniter, Vue.js, and JavaScript</li>
+                        <li>✔ Proficient in PHP, Laravel, Yii, Drupal, Vue.js, React.js and JavaScript</li>
                         <li>✔ Skilled in SOLID principles, modern design patterns, and microservice architecture</li>
                         <li>✔ Experienced in MySQL tuning, API integrations, and security best practices</li>
                         <li>✔ Comfortable with Docker, Git, Agile workflows, and cloud-based deployments</li>
@@ -184,6 +184,15 @@
                         <div class="card-body">
                             <i class="fab fa-laravel fa-2x text-danger mb-2"></i>
                             <div class="small fw-semibold">Laravel</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-center border-0 shadow-sm rounded-4 py-3">
+                        <div class="card-body">
+                            <i class="fab fa-drupal fa-2x text-primary mb-2"></i>
+                            <div class="small fw-semibold">Drupal</div>
                         </div>
                     </div>
                 </div>
@@ -328,6 +337,24 @@
         <div class="container">
             <h3 class="mb-4">Projects</h3>
             <div class="row g-4">
+                <div class="col-md-3">
+                <div class="card h-100 shadow-sm border-0 rounded-4 p-3 d-flex flex-column justify-content-between">
+
+                    <!-- Card Content -->
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Hospital Management System</h5>
+                        <p class="card-text">Drupal-based application for managing patient records, billing, diagnostics, and clinical workflows.</p>
+                    </div>
+
+                    <!-- Read More Button -->
+                    <div class="text-center mt-auto">
+                        <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModalHospital">
+                            Read More
+                        </button>
+                    </div>
+
+                </div>
+                </div>
 
                 <div class="col-md-3">
                     <div class="card h-100 shadow-sm border-0 rounded-4 p-3 d-flex flex-column justify-content-between">
@@ -456,8 +483,7 @@
                         </div>
 
                     </div>
-                </div>
-
+                </div>     
             </div>
         </div>
         <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
@@ -797,6 +823,55 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="projectModalHospital" tabindex="-1" aria-labelledby="projectModalHospitalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalHospitalLabel">Hospital Management System</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Overview:</strong> Developed a full-featured hospital web application using Drupal, enabling efficient management of patients, diagnostics, billing, and clinical data through a modular content system.</p>
+
+                <p><strong>Tech Stack:</strong> Drupal, PHP, MySQL, Bootstrap, Views, Webform, JSON:API</p>
+
+                <p>
+                    <strong>Key Contributions:</strong>
+                    <ul>
+                        <li>Created custom content types and fields for patient registration, clinical records, and billing</li>
+                        <li>Integrated Webform module for diagnostic report submissions</li>
+                        <li>Configured Views for searchable patient lists and reports</li>
+                        <li>Implemented role-based access for doctors, lab staff, and admins</li>
+                        <li>Enabled secure REST API endpoints for external system integration</li>
+                    </ul>
+                </p>
+
+                <p>
+                    <strong>Challenges:</strong>
+                    <ul>
+                        <li>Managing sensitive health records and enforcing strict access controls</li>
+                        <li>Designing a user-friendly interface for non-technical staff</li>
+                        <li>Scaling Views with large datasets (e.g., thousands of patients)</li>
+                    </ul>
+                </p>
+
+                <p>
+                    <strong>Solution:</strong>
+                    <ul>
+                        <li>Used Drupal permissions and custom roles for fine-grained access control</li>
+                        <li>Applied Ajax and exposed filters in Views to improve usability</li>
+                        <li>Optimized database indexing and caching strategies to improve performance</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
     </section>
 
 
